@@ -33,6 +33,10 @@
             color: #0af;
             text-decoration: none;
         }
+        table.table tbody tr td
+        {
+            vertical-align: middle;
+        }
     </style>
     <title>Hello Buffy</title>
 </head>
@@ -44,12 +48,13 @@
             <!--<img src="Buffers.jpg" class="img-thumbnail" width="100%"/>-->
             <img src="Buffers.jpg" style="margin-left: auto; margin-right: auto; width: 50%; display:block; margin-bottom: 2em;" class="img-circle" />
              <p>Behold, gaze upon my kingdom and know it to be trash, for I am buffymandiaz and my garbage shall stand for all of eternity as a testiment to the folly of blondekind</p>
-        <table class="table table-hover">
+        <table class="table table-striped">
         <thead>
             <tr>
                 <th>Cats</th>
                 <th>Color</th>
                 <th>Mood</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -64,6 +69,7 @@
                 <td>
                     Goof
                 </td>
+                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-sd-video"></button></td>
             </tr>
             <tr>
                 <td>
@@ -76,6 +82,7 @@
                 <td>
                     Unimpressed
                 </td>
+                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-subtitles"></button></td>
             </tr>
             <tr>
                 <td>
@@ -88,12 +95,35 @@
                 <td>
                     Unseen
                 </td>
+                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-hd-video"></span></button></td>
             </tr>
         </tbody>
-        
-        
-        
         </table>
+        <form>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Catfood Fund!
+            </div>
+            <div class="panel-body">
+    <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+    </div>
+    <div class="form-group">
+    <div class="input-group">
+      <div class="input-group-addon"><span class="glyphicon glyphicon-btc"></span></div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+    </div>
+  </div>
+            </div>
+    <div class="panel-footer">
+          <button type="submit" class="btn btn-primary btn-block">Transfer cash</button>
+    </div>
+        </div>
+</form>
         </div>
 </body>
 </html>
