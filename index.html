@@ -3,6 +3,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script>
+        var bleep = new Audio();
+        bleep.src = "BuffyMeow.mp3";
+    </script>
     <style>
         h1 {
             text-align: center;
@@ -75,7 +79,7 @@
                 <td>
                     Goof
                 </td>
-                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-sd-video"></button></td>
+                <td><button class="btn btn-default btn-block" onmousedown="bleep.play()">Meow <span class="glyphicon glyphicon-sd-video"></button></td>
             </tr>
             <tr>
                 <td>
@@ -88,7 +92,7 @@
                 <td>
                     Unimpressed
                 </td>
-                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-subtitles"></button></td>
+                <td><button class="btn btn-default btn-block" onmousedown="alert('meow')">Meow <span class="glyphicon glyphicon-subtitles"></button></td>
             </tr>
             <tr>
                 <td>
@@ -101,7 +105,7 @@
                 <td>
                     Unseen
                 </td>
-                <td><button class="btn btn-default btn-block">Meow <span class="glyphicon glyphicon-hd-video"></span></button></td>
+                <td><button class="btn btn-default btn-block" onmousedown="bleep.play()">Meow <span class="glyphicon glyphicon-hd-video"></button></td>
             </tr>
         </tbody>
         </table>
